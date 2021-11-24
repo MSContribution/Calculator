@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/calc.css">
+  <title>Calculator</title>
+</head>
+<body>
+   <div>
+      <h1>
+        Web Calculator
+      </h1>
+   </div>
+   <br>
+  <form action="index.html" name="Cal" class="text-center container" id="cal">
+    <input type="text" id="screen" name="screen">
+    <br><br>
+    <input type="button" class="calc-buttons" name="poweron" value="AC" onclick="cal.screen.value=''">
+    <input type="button" class="calc-buttons" name="clear" value="CE" onclick="cal.screen.value=cal.screen.value.substring(0,cal.screen.value.length - 1)">
+    <input type="button" class="calc-buttons" name="modulus" value=" 00 " onclick="cal.screen.value+='00'">
+    <input type="button" class="calc-buttons" name="divide" value=" / " onclick="cal.screen.value+='/'">
+    <br><br>
+    <input type="button" class="calc-buttons" name="number-7" value=" 7 " onclick="cal.screen.value+='7'">
+    <input type="button" class="calc-buttons" name="number-8" value=" 8 " onclick="cal.screen.value+='8'">
+    <input type="button" class="calc-buttons" name="number-9" value=" 9 " onclick="cal.screen.value+='9'">
+    <input type="button" class="calc-buttons" name="multiply" value=" * " onclick="cal.screen.value+='*'">
+    <br><br>
+    <input type="button" class="calc-buttons" name="number-4" value=" 4 " onclick="cal.screen.value+='4'">
+    <input type="button" class="calc-buttons" name="number-5" value=" 5 " onclick="cal.screen.value+='5'">
+    <input type="button" class="calc-buttons" name="number-6" value=" 6 " onclick="cal.screen.value+='6'">
+    <input type="button" class="calc-buttons" name="minus" value=" - " onclick="cal.screen.value+='-'">
+    <br><br>
+    <input type="button" class="calc-buttons" name="number-1" value=" 1 " onclick="cal.screen.value+='1'">
+    <input type="button" class="calc-buttons" name="number-2" value=" 2 " onclick="cal.screen.value+='2'">
+    <input type="button" class="calc-buttons" name="number-3" value=" 3 " onclick="cal.screen.value+='3'">
+    <input type="button" class="calc-buttons" name="plus" value=" + " onclick="cal.screen.value+='+'">
+    <br><br>
+    <input type="button" id="zero" name="zero" value=" 0 " onclick="cal.screen.value+='0'">
+    <input type="button" class="calc-buttons" name="dot" value=" . " onclick="cal.screen.value+='.'">
+    <input type="button" class="calc-buttons" name="equals" value=" = " onclick="cal.screen.value=eval(cal.screen.value)">
+    <br><br>
+  </form>
+</body>
+<footer>
+  Made with <span id="s1">&#10084;</span> by <span id="s2">Mohammad Sharjil</span>
+</footer>
+</html>
